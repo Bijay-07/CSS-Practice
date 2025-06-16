@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIVE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            display: grid;
+            background-color: aquamarine;
+            grid-template-areas: 
+                "box1 box1 box2 box2"
+                "box3 box3 box4 box4"
+                "box3 box3 box5 box6";
+            gap: 20px;
+        }
+        .item{
+            border: solid 2px black;
+            background-color: blueviolet;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box1
+        {
+            background-color: blueviolet;
+            height: 150px;
+            grid-area: box1;
+        }
+        #box2{
+            background-color: aqua;
+            grid-area: box2;
+        }
+        #box3{
+            background-color: greenyellow;
+            grid-area: box3;
+        }
+        #box4{
+            background-color: rgb(255, 127, 127);
+            height: 150px;
+            grid-area: box4;
+        }
+        #box5{
+            background-color: rgb(179, 130, 55);
+            height: 150px;
+            grid-area: box5;
+        }
+        #box6{
+            background-color: rgb(60, 165, 206);
+            height: 150px;
+            grid-area: box6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="box1">A</div>
+        <div class="item" id="box2">B</div>
+        <div class="item" id="box3">C</div>
+        <div class="item" id="box4">D</div>
+        <div class="item" id="box5">E</div>
+        <div class="item" id="box6">F</div>
+        <!-- <div class="item" id="box7">G</div>
+        <div class="item" id="box8">H</div> -->
+    </div>
+</body>
+</html>
